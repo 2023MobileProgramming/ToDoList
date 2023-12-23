@@ -38,7 +38,7 @@
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:text="     06:00"
-                android:textColor="@color/black"
+                android:textColor="@drawable/selector_ex"
                 android:textStyle="bold"/>
 
             <TextView
@@ -50,6 +50,8 @@
                 android:textStyle="bold"
                 android:background="@color/white"
                 android:layout_margin="0.5dp"
+                android:onClick = "onTextViewClicked"
+                android:clickable="true"
                 android:id="@+id/six1"/>
 
             <TextView
@@ -140,7 +142,7 @@
                 android:textStyle="bold"
                 android:background="@color/white"
                 android:layout_margin="0.5dp"
-                android:id="@+id/sevne2"/>
+                android:id="@+id/seven2"/>
             <TextView
                 android:text=" "
                 android:layout_height="wrap_content"
@@ -150,7 +152,7 @@
                 android:textStyle="bold"
                 android:background="@color/white"
                 android:layout_margin="0.5dp"
-                android:id="@+id/sevne3"/>
+                android:id="@+id/seven3"/>
             <TextView
                 android:text=" "
                 android:layout_height="wrap_content"
@@ -160,7 +162,7 @@
                 android:textStyle="bold"
                 android:background="@color/white"
                 android:layout_margin="0.5dp"
-                android:id="@+id/sevne4"/>
+                android:id="@+id/seven4"/>
             <TextView
                 android:text=" "
                 android:layout_height="wrap_content"
@@ -1938,6 +1940,11 @@
                 android:id="@+id/five6"/>
         </TableRow>
     </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초기화"
+        android:id="@+id/initialization"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
