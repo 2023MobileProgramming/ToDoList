@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90a4ae">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/writeDay"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnAddTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To Do"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickAddTask"/>
+
+    <!-- 할 일 리스트 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/checkListLayout">
+            <!-- 할 일이 추가될 때마다 동적으로 체크박스 추가 -->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 하루 피드백 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="오늘 하루는 어땠나요?"
+        android:textSize="20dp"
+        android:id="@+id/feedback"
+        android:textColorHint="#808080"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:background="#FEF5ED"
+        android:padding="20dp"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

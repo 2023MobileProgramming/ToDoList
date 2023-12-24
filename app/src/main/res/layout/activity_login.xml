@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#78909c">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/pinNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:maxLength="4"
+            android:hint="비밀번호 4자리를 입력하세요."
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:lines="3"
+            android:textAlignment="center"
+            android:fontFamily="@font/hmbs"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textInform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="비밀번호를 입력하세요. (초기 비밀번호: 0000)"
+            android:fontFamily="@font/hmbs"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:fontFamily="@font/hmbs"
+            android:background="#000000"
+            android:textAlignment="center"
+            android:text="로그인"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:id="@+id/btnFindPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:padding="15dp"
+            android:fontFamily="@font/hmbs"
+            android:background="#000000"
+            android:textAlignment="center"
+            android:text="비밀번호 찾기"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#78909c">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:fontFamily="@font/cafeclassic"
+            android:singleLine="true"
+            android:text="날짜를 선택해주세요."
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:textSize="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cafeclassic"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnToday"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@color/bluegray_700"
+            android:layout_marginStart="10dp"
+            android:onClick="setTodayDate"
+            android:text="Today" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_title"
+        android:text="To Do List"
+        android:textSize="23dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CalendarView
+        android:id="@+id/CalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"
+        android:unfocusedMonthDateColor="@color/black"
+        android:theme="@style/AppTheme"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/tv_text3"
+        android:textSize="17dp"
+        android:text="0000년 00월 00일" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contextToDoList"
+        android:textColor="@color/black"
+        android:maxLines="8"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newWrite"
+        android:background="#000000"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="할 일 추가하기" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/delToDoList"
+        android:background="#808080"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:text="삭제하기" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/timetable"
+        android:title="오늘의 타임테이블"></item>
+    <item
+        android:id="@+id/resetPin"
+        android:title="PIN 재설정"></item>
+    <item
+        android:id="@+id/resetName"
+        android:title="이름 재설정"></item>
+</menu>
